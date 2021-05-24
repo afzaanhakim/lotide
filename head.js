@@ -7,7 +7,9 @@ const assertEqual = (actual, expected) => {
 };
 
 
-let head  = (actual) => {return actual[0]}
+let head  = (actual) => {
+  return actual[0];
+};
 
 
 // TEST CODE
