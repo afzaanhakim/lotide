@@ -7,7 +7,7 @@ const assertEqual = (actual, expected) => {
 };
 
 const eqArrays = (arr1, arr2) => {
-  let result = true; //declaring a variable as true to check for future test cases 
+  let result = true;//declaring a variable as true to check for future test cases
   if (arr1.length !== arr2.length) {//first case to check if the length of arrays are equal
     return result = false; //return false if length is not equal
   } else {
@@ -22,17 +22,17 @@ const eqArrays = (arr1, arr2) => {
 
 const eqObjects = function(object1, object2) {
   let result = true;
-  let key1 = Object.keys(object1)
-  let key2 = Object.keys(object2)
-  if(key1.length !== key2.length) {
+  let key1 = Object.keys(object1);
+  let key2 = Object.keys(object2);
+  if (key1.length !== key2.length) {
     result = false;
   } else {
     for (const a in object1) {
       if (Array.isArray(object1[a]) && Array.isArray(object2[a])) {
-        return eqArrays(object1[a], object2[a])
+        return eqArrays(object1[a], object2[a]);
       } else {
         if (object1[a] !== object2[a]) {
-          result = false
+          result = false;
         }
       }
     }
@@ -47,8 +47,8 @@ assertEqual(eqObjects(ab, ba)); // => true
 const abc = { a: "1", b: "2", c: "3" };
 assertEqual(eqObjects(ab, abc)); // => false
 
-console.log(eqObjects(ab,ba))
-console.log(eqObjects(ab, abc))
+console.log(eqObjects(ab,ba));
+console.log(eqObjects(ab, abc));
 
 const cd = { c: "1", d: ["2", 3] };
 const dc = { d: ["2", 3], c: "1" };
