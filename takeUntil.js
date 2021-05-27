@@ -29,7 +29,7 @@ const takeUntil = function(array, callback) {
       break;
     }
   }
-  return results.slice(0, -1)
+  return results.slice(0, -1);
 };
 
 const data2 = ["I've", "been", "to", "Hollywood", ",", "I've", "been", "to", "Redwood"];
