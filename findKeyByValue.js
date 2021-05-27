@@ -28,8 +28,23 @@ const bestTVShowsByGenre = {
   drama:  "The Wire"
 };
 
+
+
+
 console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
 
 
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
 assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
+
+
+
+
+const bestMoviesByGenre = {
+  sci_fi: "Interstellar",
+  horror: "A Quiet Place",
+  comedy: "Forest Gump"
+}
+
+findKeyByValue(bestMoviesByGenre, "A Quiet Place");
+assertEqual(findKeyByValue(bestMoviesByGenre, "A Quiet Place"), "horror");
