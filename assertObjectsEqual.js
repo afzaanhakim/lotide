@@ -38,6 +38,6 @@ const abc = { a: "1", b: "2", c: "3" };
 console.log(assertObjectsEqual(ab, abc)); // => false
 
 
-assertObjectsEqual({a: 1, b: 2}, {b: 2, a:1})
-assertObjectsEqual({ a: "1", b: "2", c: "3" }, ab)
-assertObjectsEqual(ab, ba)
+assertObjectsEqual({a: 1, b: 2}, {b: 2, a:1});
+assertObjectsEqual({ a: "1", b: "2", c: "3" }, ab);
+assertObjectsEqual(ab, ba);
