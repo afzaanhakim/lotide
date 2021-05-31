@@ -8,17 +8,17 @@ describe("#head", () => {
   });
 
   it("returns '5' for ['5']", () => {
-    assert.strictEqual(head(['5']), '5'); 
+    assert.strictEqual(head(['5']), '5');
   });
 
 
   it("returns 'Lighthouse' for ['Lighthouse', 'Labs]", () => {
-    assert.strictEqual(head(['Lighthouse', 'Labs']), "Lighthouse"); 
+    assert.strictEqual(head(['Lighthouse', 'Labs']),"Lighthouse"); 
   });
 
 
-  it ("returns 'Hello' for '['Hello', 'Lighthouse', 'Labs']", () => {
-    assert.strictEqual(head(['Hello', 'Lighthouse', 'Labs']), "Hello")
+  it("returns 'Hello' for '['Hello', 'Lighthouse', 'Labs']",() => {
+    assert.strictEqual(head(['Hello', 'Lighthouse', 'Labs']), "Hello");
 
   });
 
