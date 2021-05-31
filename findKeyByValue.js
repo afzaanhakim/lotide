@@ -1,10 +1,4 @@
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual')
 
 const findKeyByValue = function(title, name) {
   let result = undefined;
@@ -16,35 +10,26 @@ const findKeyByValue = function(title, name) {
 };
 
 
-
+module.exports = findKeyByValue
 
 
 
 //test cases
 
-const bestTVShowsByGenre = {
-  sci_fi: "The Expanse",
-  comedy: "Brooklyn Nine-Nine",
-  drama:  "The Wire"
-};
+// const bestTVShowsByGenre = {
+//   sci_fi: "The Expanse",
+//   comedy: "Brooklyn Nine-Nine",
+//   drama:  "The Wire"
+// };
+// console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
+// assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
 
+// const bestMoviesByGenre = {
+//   sci_fi: "Interstellar",
+//   horror: "A Quiet Place",
+//   comedy: "Forest Gump"
+// }
 
-
-
-console.log(findKeyByValue(bestTVShowsByGenre, "The Wire"));
-
-
-assertEqual(findKeyByValue(bestTVShowsByGenre, "The Wire"), "drama");
-assertEqual(findKeyByValue(bestTVShowsByGenre, "That '70s Show"), undefined);
-
-
-
-
-const bestMoviesByGenre = {
-  sci_fi: "Interstellar",
-  horror: "A Quiet Place",
-  comedy: "Forest Gump"
-}
-
-findKeyByValue(bestMoviesByGenre, "A Quiet Place");
-assertEqual(findKeyByValue(bestMoviesByGenre, "A Quiet Place"), "horror");
+// findKeyByValue(bestMoviesByGenre, "A Quiet Place");
+// assertEqual(findKeyByValue(bestMoviesByGenre, "A Quiet Place"), "horror");
