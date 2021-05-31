@@ -41,7 +41,7 @@ The following functions are currently implemented:
 * `middle`: a function that will return only the middle element(s) of an array based on conditions such as array length
 * `tail`: a function that will return the "tail" of an array: everything except for the first item (head) of the provided array.
 * `takeUntil`: a function that will return a slice of the array with elements taken from the beginning until the callback returns a truth value
-* `without`: a function that will return a subset of a gievn array, removing unwanted elements
+* `without`: a function that will return a subset of a given array, removing unwanted elements
 
 
 
